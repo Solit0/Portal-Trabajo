@@ -1,0 +1,1 @@
+export const qs=(s,sc=document)=>sc.querySelector(s);export const qsa=(s,sc=document)=>[...sc.querySelectorAll(s)];export const on=(el,ev,fn)=>el.addEventListener(ev,fn);export const param=(n)=>new URLSearchParams(location.search).get(n);

@@ -1,0 +1,1 @@
+const seg=document.querySelector('.segment');if(seg){const btns=seg.querySelectorAll('button[data-role]');const roleInput=document.querySelector('input[name="role"]');btns.forEach(b=>b.addEventListener('click',e=>{e.preventDefault();btns.forEach(x=>x.classList.remove('active'));b.classList.add('active');roleInput.value=b.dataset.role;}));}
