@@ -1,3 +1,37 @@
+search-bar {
+    width: 100%;
+    max-width: 700px; /* Igual que el de valoraciones */
+    margin: 0 auto 32px auto; /* Más margen inferior entre buscador y cards */
+}
+.search-bar form {
+    display: flex;
+    gap: 12px;
+}
+.search-bar input {
+    flex: 1;
+    background: #f3f4f6;
+    color: #222;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 1.1rem;
+}
+.search-bar button {
+    background: var(--brand-2);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 0;
+}
+.search-bar button:hover {
+    background: var(--brand);
+}
+
 /* Contenedor principal */
 .container {
     max-width: 1200px;
@@ -33,6 +67,7 @@ h1 {
     align-items: center;
     gap: 32px;
     padding: 28px 32px;
+    margin-top: 20px;
 }
 
 .company-logo {

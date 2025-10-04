@@ -1,0 +1,216 @@
+.reviews-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 16px;
+        }
+        .reviews-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 32px;
+        }
+        .reviews-header h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #222;
+            margin: 0;
+        }
+        .reviews-filters {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        .reviews-filters select {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 1rem;
+            background: #f3f4f6;
+            color: #222;
+        }
+        .company-reviews-list {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        .company-review-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+            padding: 28px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .company-review-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .company-logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            background: #e0e7ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--brand-2);
+            flex-shrink: 0;
+        }
+        .company-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .company-info strong {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--brand-2);
+        }
+        .company-info .muted {
+            color: #6b7280;
+            font-size: 1rem;
+        }
+        .company-rating {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fbbf24;
+        }
+        .company-rating .stars {
+            font-size: 1.3rem;
+        }
+        .company-rating .count {
+            color: #6b7280;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        .review-actions {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-top: 8px;
+        }
+        .review-actions .stars-input {
+            display: flex;
+            gap: 2px;
+            align-items: center;
+        }
+        .review-actions .stars-input input[type="radio"] {
+            display: none;
+        }
+        .review-actions .stars-input label {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #e5e7eb;
+            transition: color 0.2s;
+        }
+        .review-actions .stars-input input[type="radio"]:checked ~ label,
+        .review-actions .stars-input label.selected {
+            color: #fbbf24;
+        }
+        .review-actions textarea {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 1rem;
+            background: #f3f4f6;
+            color: #222;
+            resize: vertical;
+            width: 220px;
+            min-height: 38px;
+        }
+        .review-actions .btn {
+            background: #2563eb;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 18px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .review-actions .btn:hover {
+            background: #4338ca;
+        }
+        .reviews-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 10px;
+        }
+        .review-card {
+            background: #f3f4f6;
+            border-radius: 10px;
+            padding: 12px 16px;
+            color: #222;
+            font-size: 1rem;
+            box-shadow: 0 1px 4px rgba(67,56,202,0.03);
+        }
+        .review-card .author {
+            font-weight: 700;
+            color: var(--brand-2);
+            margin-bottom: 2px;
+        }
+        .review-card .stars {
+            color: #fbbf24;
+            font-size: 1.1rem;
+            margin-left: 6px;
+        }
+        .review-card .date {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+        .search-bar {
+            width: 100%;
+            max-width:1000px; 
+            margin: 0 auto 28px auto;
+        }
+        .search-bar form {
+            display: flex;
+            gap: 12px;
+        }
+        .search-bar input {
+            flex: 1;
+            background: #f3f4f6;
+            color: #222;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 1.1rem;
+        }
+        .search-bar button {
+            background: var(--brand-2);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .search-bar button:hover {
+            background: var(--brand);
+        }
+        @media (max-width: 700px) {
+            .reviews-container {
+                padding: 18px 6px;
+            }
+            .company-review-card {
+                padding: 14px 8px;
+            }
+            .company-review-header {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+        }

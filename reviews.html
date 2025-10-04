@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Valoraciones de Empresas – Portal de Trabajo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/components.css"/>
+    <link rel="stylesheet" href="css/pages/reviews.css"/>
+</head>
+<body>
+    <div data-include="partials/header.html"></div>
+    <main class="reviews-container">
+        <div class="reviews-header">
+            <h1>Valoraciones de Empresas</h1>
+            <div class="reviews-filters">
+                <label for="filter-rating">Ordenar por:</label>
+                <select id="filter-rating">
+                    <option value="rating-desc">Mayor valoración</option>
+                    <option value="rating-asc">Menor valoración</option>
+                    <option value="reviews-desc">Más reseñas</option>
+                    <option value="reviews-asc">Menos reseñas</option>
+                </select>
+            </div>
+        </div>
+        <div class="search-bar">
+            <form>
+                <input type="text" placeholder="Buscar empresa" />
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <section class="company-reviews-list">
+            <!-- Empresa 1 -->
+            <div class="company-review-card">
+                <div class="company-review-header">
+                    <div class="company-logo">A</div>
+                    <div class="company-info">
+                        <strong>ACME Labs</strong>
+                        <div class="muted">San Salvador · Tecnología · Fundada en 2012</div>
+                        <div class="muted">Soluciones tecnológicas para empresas de todo tamaño.</div>
+                    </div>
+                    <div class="company-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="count">(32 reseñas)</span>
+                    </div>
+                </div>
+                <div class="review-actions">
+                    <form>
+                        <div class="stars-input">
+                            <input type="radio" id="acme-star5" name="acme-rating" value="5"><label for="acme-star5">&#9733;</label>
+                            <input type="radio" id="acme-star4" name="acme-rating" value="4"><label for="acme-star4">&#9733;</label>
+                            <input type="radio" id="acme-star3" name="acme-rating" value="3"><label for="acme-star3">&#9733;</label>
+                            <input type="radio" id="acme-star2" name="acme-rating" value="2"><label for="acme-star2">&#9733;</label>
+                            <input type="radio" id="acme-star1" name="acme-rating" value="1"><label for="acme-star1">&#9733;</label>
+                        </div>
+                        <textarea name="acme-review" placeholder="Escribe tu reseña..."></textarea>
+                        <button type="submit" class="btn">Valorar</button>
+                    </form>
+                </div>
+                <div class="reviews-list">
+                    <div class="review-card">
+                        <div class="author">Juan Pérez <span class="stars">★★★★★</span></div>
+                        <div class="date">Hace 2 días</div>
+                        <div>Excelente empresa, buen ambiente laboral.</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="author">Ana Gómez <span class="stars">★★★★☆</span></div>
+                        <div class="date">Hace 1 semana</div>
+                        <div>El proceso de selección fue rápido y profesional.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Empresa 2 -->
+            <div class="company-review-card">
+                <div class="company-review-header">
+                    <div class="company-logo">B</div>
+                    <div class="company-info">
+                        <strong>BetaCorp</strong>
+                        <div class="muted">Santa Ana · Marketing · Fundada en 2015</div>
+                        <div class="muted">Estrategias digitales y campañas innovadoras para marcas.</div>
+                    </div>
+                    <div class="company-rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="count">(18 reseñas)</span>
+                    </div>
+                </div>
+                <div class="review-actions">
+                    <form>
+                        <div class="stars-input">
+                            <input type="radio" id="beta-star5" name="beta-rating" value="5"><label for="beta-star5">&#9733;</label>
+                            <input type="radio" id="beta-star4" name="beta-rating" value="4"><label for="beta-star4">&#9733;</label>
+                            <input type="radio" id="beta-star3" name="beta-rating" value="3"><label for="beta-star3">&#9733;</label>
+                            <input type="radio" id="beta-star2" name="beta-rating" value="2"><label for="beta-star2">&#9733;</label>
+                            <input type="radio" id="beta-star1" name="beta-rating" value="1"><label for="beta-star1">&#9733;</label>
+                        </div>
+                        <textarea name="beta-review" placeholder="Escribe tu reseña..."></textarea>
+                        <button type="submit" class="btn">Valorar</button>
+                    </form>
+                </div>
+                <div class="reviews-list">
+                    <div class="review-card">
+                        <div class="author">Luis Torres <span class="stars">★★★☆☆</span></div>
+                        <div class="date">Hace 3 días</div>
+                        <div>Buen equipo, pero el proceso de onboarding puede mejorar.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Empresa 3 -->
+            <div class="company-review-card">
+                <div class="company-review-header">
+                    <div class="company-logo">C</div>
+                    <div class="company-info">
+                        <strong>Cloudify</strong>
+                        <div class="muted">San Miguel · Software · Fundada en 2018</div>
+                        <div class="muted">Soluciones SaaS para empresas modernas y equipos remotos.</div>
+                    </div>
+                    <div class="company-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="count">(21 reseñas)</span>
+                    </div>
+                </div>
+                <div class="review-actions">
+                    <form>
+                        <div class="stars-input">
+                            <input type="radio" id="cloud-star5" name="cloud-rating" value="5"><label for="cloud-star5">&#9733;</label>
+                            <input type="radio" id="cloud-star4" name="cloud-rating" value="4"><label for="cloud-star4">&#9733;</label>
+                            <input type="radio" id="cloud-star3" name="cloud-rating" value="3"><label for="cloud-star3">&#9733;</label>
+                            <input type="radio" id="cloud-star2" name="cloud-rating" value="2"><label for="cloud-star2">&#9733;</label>
+                            <input type="radio" id="cloud-star1" name="cloud-rating" value="1"><label for="cloud-star1">&#9733;</label>
+                        </div>
+                        <textarea name="cloud-review" placeholder="Escribe tu reseña..."></textarea>
+                        <button type="submit" class="btn">Valorar</button>
+                    </form>
+                </div>
+                <div class="reviews-list">
+                    <div class="review-card">
+                        <div class="author">Sofía López <span class="stars">★★★★★</span></div>
+                        <div class="date">Hace 5 días</div>
+                        <div>Herramientas modernas y excelente flexibilidad laboral.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div data-include="partials/footer.html"></div>
+    <script src="js/components/include.js"></script>
+</body>
+</html>
