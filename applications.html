@@ -1,1 +1,66 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Mis postulaciones – Portal de Trabajo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/tokens.css"/><link rel="stylesheet" href="css/base.css"/><link rel="stylesheet" href="css/components.css"/></head><body><div data-include="partials/header.html"></div><main class="container"><h1>Mis postulaciones</h1><div class="toolbar"><div class="left"><div class="select"><select name="status"><option value="">Todas</option><option value="applied">Aplicadas</option><option value="review">En revisión</option><option value="accepted">Aceptadas</option><option value="rejected">Rechazadas</option></select><span class="ico"><img src="assets/icons/chevron-down.svg" alt=""></span></div></div></div><section class="card"><table style="width:100%;border-collapse:collapse"><thead><tr style="text-align:left;border-bottom:1px solid var(--border)"><th style="padding:8px">Puesto</th><th style="padding:8px">Empresa</th><th style="padding:8px">Fecha</th><th style="padding:8px">Estado</th><th style="padding:8px"></th></tr></thead><tbody><tr><td style="padding:8px">Desarrollador Node.js</td><td style="padding:8px">ACME Labs</td><td style="padding:8px">26/09/2025</td><td style="padding:8px"><span class="chip">En revisión</span></td><td style="padding:8px"><a class="btn small ghost" href="job.html">Ver</a></td></tr><tr><td style="padding:8px">QA Tester</td><td style="padding:8px">BetaCorp</td><td style="padding:8px">20/09/2025</td><td style="padding:8px"><span class="chip">Aplicada</span></td><td style="padding:8px"><a class="btn small ghost" href="job.html">Ver</a></td></tr></tbody></table></section></main><div data-include="partials/footer.html"></div><script src="js/components/include.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Mis postulaciones – Portal de Trabajo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/components.css"/>
+</head>
+<body>
+    <div data-include="partials/header.html"></div>
+    <main class="container">
+        <h1>Mis postulaciones</h1>
+        <div class="toolbar">
+            <div class="left">
+                <div class="select">
+                    <select name="status">
+                        <option value="">Todas</option>
+                        <option value="applied">Aplicadas</option>
+                        <option value="review">En revisión</option>
+                        <option value="accepted">Aceptadas</option>
+                        <option value="rejected">Rechazadas</option>
+                    </select>
+                    <span class="ico">
+                        <img src="assets/icons/chevron-down.svg" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <section class="card">
+            <table style="width:100%;border-collapse:collapse">
+                <thead>
+                    <tr style="text-align:left;border-bottom:1px solid var(--border)">
+                        <th style="padding:8px">Puesto</th>
+                        <th style="padding:8px">Empresa</th>
+                        <th style="padding:8px">Fecha</th>
+                        <th style="padding:8px">Estado</th>
+                        <th style="padding:8px"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding:8px">Desarrollador Node.js</td>
+                        <td style="padding:8px">ACME Labs</td>
+                        <td style="padding:8px">26/09/2025</td>
+                        <td style="padding:8px"><span class="chip">En revisión</span></td>
+                        <td style="padding:8px"><a class="btn small ghost" href="job.html">Ver</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding:8px">QA Tester</td>
+                        <td style="padding:8px">BetaCorp</td>
+                        <td style="padding:8px">20/09/2025</td>
+                        <td style="padding:8px"><span class="chip">Aplicada</span></td>
+                        <td style="padding:8px"><a class="btn small ghost" href="job.html">Ver</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <div data-include="partials/footer.html"></div>
+    <script src="js/components/include.js"></script>
+</body>
+</html>

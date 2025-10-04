@@ -1,1 +1,7 @@
-<nav class="pagination"><a href="#" aria-label="Anterior">‹</a><a href="#" class="active">1</a><a href="#">2</a><a href="#">3</a><a href="#" aria-label="Siguiente">›</a></nav>
+<nav class="pagination">
+    <ul>
+        <li><a href="?page={{prev}}">&laquo; Anterior</a></li>
+        <li><span>Página {{current}} de {{total}}</span></li>
+        <li><a href="?page={{next}}">Siguiente &raquo;</a></li>
+    </ul>
+</nav>

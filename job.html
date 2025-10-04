@@ -1,1 +1,96 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Desarrollador Node.js – Portal de Trabajo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/tokens.css"/><link rel="stylesheet" href="css/base.css"/><link rel="stylesheet" href="css/components.css"/></head><body><div data-include="partials/header.html"></div><main class="container" style="margin-top:12px"><section class="card job-header"><h1>Desarrollador Node.js</h1><div class="row between"><div class="muted">ACME Labs · Remoto · Senior · hace 5 horas</div><div class="row"><button class="btn small ghost"><img src="assets/icons/save.svg" alt="" width="16" height="16" style="vertical-align:middle;margin-right:6px"/>Guardar</button><button class="btn small ghost"><img src="assets/icons/share.svg" alt="" width="16" height="16" style="vertical-align:middle;margin-right:6px"/>Compartir</button></div></div><div style="margin-top:8px"><span class="chip">Full-time</span><span class="chip">$900–1400</span></div></section><section class="layout" style="margin-top:16px"><section><article class="card"><h2>Descripción</h2><p>Buscamos un desarrollador con experiencia en Node.js y Express para construir APIs escalables.</p><h3>Responsabilidades</h3><ul><li>Diseñar y desarrollar endpoints REST.</li><li>Escribir pruebas básicas.</li><li>Colaborar con front-end.</li></ul><h3>Beneficios</h3><ul class="row" style="flex-wrap:wrap;gap:8px"><li class="chip">Remoto</li><li class="chip">Seguro médico</li><li class="chip">Horario flexible</li></ul></article><form class="card form" style="margin-top:16px"><h2>¿Interesado en este puesto?</h2><div class="form grid-2"><label>Nombre<input name="firstName" required/></label><label>Apellido<input name="lastName" required/></label><label>Email<input name="email" type="email" required/></label><label>CV <input name="cvFile" type="file" accept=".pdf,.doc,.docx"/></label></div><label>Carta de presentación<textarea name="coverLetter" rows="4"></textarea></label><label><input type="checkbox" name="terms" required/> Acepto los términos y condiciones</label><button class="btn">Enviar solicitud</button></form></section><aside class="stack" style="display:grid;gap:16px"><div data-include="partials/company-card.html"></div><div data-include="partials/reviews-summary.html"></div><ul class="job-list"><div data-include="partials/review-item.html"></div><div data-include="partials/review-item.html"></div></ul></aside></section></main><div data-include="partials/footer.html"></div><script src="js/components/include.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Desarrollador Node.js – Portal de Trabajo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/components.css"/>
+    <link rel="stylesheet" href="css/pages/job.css"/>
+</head>
+<body>
+    <div data-include="partials/header.html"></div>
+    <main class="container" style="margin-top:12px">
+        <section class="card job-header">
+            <h1>Desarrollador Node.js</h1>
+            <div class="row between">
+                <div class="muted">ACME Labs · Remoto · Senior · hace 5 horas</div>
+                <div class="row">
+                    <button class="btn small ghost">
+                        <img src="assets/icons/save.svg" alt="" width="16" height="16" style="vertical-align:middle;margin-right:6px"/>
+                        Guardar
+                    </button>
+                    <button class="btn small ghost">
+                        <img src="assets/icons/share.svg" alt="" width="16" height="16" style="vertical-align:middle;margin-right:6px"/>
+                        Compartir
+                    </button>
+                </div>
+            </div>
+            <div style="margin-top:8px">
+                <span class="chip">Full-time</span>
+                <span class="chip">$900–1400</span>
+            </div>
+        </section>
+        <section class="layout" style="margin-top:16px">
+            <section>
+                <div class="section-card">
+                    <h2>Descripción</h2>
+                    <p>Buscamos un desarrollador con experiencia en Node.js y Express para construir APIs escalables.</p>
+                </div>
+                <div class="section-card">
+                    <h2>Responsabilidades</h2>
+                    <ul>
+                        <li>Diseñar y desarrollar endpoints REST.</li>
+                        <li>Escribir pruebas básicas.</li>
+                        <li>Colaborar con front-end.</li>
+                    </ul>
+                </div>
+                <div class="section-card">
+                    <h2>Beneficios</h2>
+                    <ul class="row" style="flex-wrap:wrap;gap:8px">
+                        <li class="chip">Remoto</li>
+                        <li class="chip">Seguro médico</li>
+                        <li class="chip">Horario flexible</li>
+                    </ul>
+                </div>
+                <form class="card form" style="margin-top:16px">
+                    <h2>¿Interesado en este puesto?</h2>
+                    <div class="form grid-2">
+                        <label>Nombre<input name="firstName" required/></label>
+                        <label>Apellido<input name="lastName" required/></label>
+                        <label>Email<input name="email" type="email" required/></label>
+                        <label>CV <input name="cvFile" type="file" accept=".pdf,.doc,.docx"/></label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <label for="terms">Acepto los términos y condiciones</label>
+                        <input type="checkbox" name="terms" required id="terms"/>
+                    </div>
+                    <button class="btn">Enviar solicitud</button>
+                </form>
+            </section>
+            <aside class="stack" style="display:grid;gap:16px">
+                <div data-include="partials/company-card.html"></div>
+                <div data-include="partials/reviews-summary.html"></div>
+                <ul class="comments-list">
+                    <li class="comment-card">
+                        <div class="author">Juan Pérez</div>
+                        <div class="date">Hace 2 días</div>
+                        <div>Excelente empresa, buen ambiente laboral.</div>
+                    </li>
+                    <li class="comment-card">
+                        <div class="author">Ana Gómez</div>
+                        <div class="date">Hace 1 semana</div>
+                        <div>El proceso de selección fue rápido y profesional.</div>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+    <div data-include="partials/footer.html"></div>
+    <script src="js/components/include.js"></script>
+</body>
+</html>

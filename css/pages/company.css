@@ -1,1 +1,399 @@
-/* company page styles (extend as needed) */
+.dashboard-layout {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+        .sidebar-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .panel-menu {
+            background: #f3f4f6;
+            border-radius: 12px;
+            padding: 18px 0;
+            margin-bottom: 8px;
+        }
+        .panel-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0 0;
+        }
+        .panel-menu li {
+            padding: 10px 24px;
+            color: #222;
+            font-weight: 500;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            border-left: 4px solid transparent;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .panel-menu li.active {
+            background: #e0e7ff;
+            color: var(--brand-2);
+            border-left: 4px solid var(--brand-2);
+        }
+        .panel-menu li svg {
+            width: 20px;
+            height: 20px;
+            color: var(--brand-2);
+        }
+        .panel-metric {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+            padding: 24px 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--brand-2);
+        }
+        .panel-metric .label {
+            font-size: 1.1rem;
+            color: #6b7280;
+            font-weight: 500;
+            margin-top: 6px;
+        }
+        /* Selector de empresa */
+        .company-selector {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 18px;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .company-selector label {
+            font-weight: 600;
+            color: #222;
+            margin-right: 8px;
+        }
+        .company-selector select {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 1rem;
+            background: #f3f4f6;
+            color: #222;
+        }
+        /* Main dashboard */
+        .dashboard-main {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .dashboard-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+        }
+        .dashboard-header h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #222;
+            margin: 0;
+        }
+        .dashboard-header .btn {
+            background: #2563eb;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .dashboard-header .btn:hover {
+            background: #4338ca;
+        }
+        /* Ofertas cards */
+        .offers-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .offer-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+        }
+        .offer-card .offer-info {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .offer-card .icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            background: #e0e7ff;
+            color: var(--brand-2);
+            font-size: 1.5rem;
+        }
+        .offer-card .title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #222;
+        }
+        .offer-card .subtitle {
+            color: #6b7280;
+            font-size: 1rem;
+        }
+        .offer-card .stats {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 8px;
+        }
+        .offer-card .postulations {
+            background: #e0e7ff;
+            color: var(--brand-2);
+            font-weight: 600;
+            border-radius: 999px;
+            padding: 4px 14px;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+            text-align: right;
+        }
+        .offer-card .btn {
+            background: #fff;
+            color: var(--brand-2);
+            border: 1px solid var(--brand-2);
+            border-radius: 8px;
+            padding: 8px 18px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+        .offer-card .btn:hover {
+            background: #e0e7ff;
+            color: #4338ca;
+        }
+        /* Postulaciones recientes */
+        .recent-postulations-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+            padding: 18px 24px;
+            margin-top: 18px;
+        }
+        .recent-postulations-card h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 14px;
+        }
+        .recent-postulations-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .recent-postulation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 0;
+        }
+        .recent-postulation .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #e0e7ff;
+            color: var(--brand-2);
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        .recent-postulation .info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .recent-postulation .name {
+            font-weight: 700;
+            color: var(--brand-2);
+            font-size: 1rem;
+        }
+        .recent-postulation .details {
+            color: #222;
+            font-size: 0.98rem;
+        }
+        .recent-postulation .btn {
+            background: #fff;
+            color: var(--brand-2);
+            border: 1px solid var(--brand-2);
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+        .recent-postulation .btn:hover {
+            background: #e0e7ff;
+            color: #4338ca;
+        }
+        @media (max-width: 900px) {
+            .dashboard-layout {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+            .dashboard-main {
+                gap: 18px;
+            }
+        }
+.card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+    padding: 28px 32px;
+    margin-bottom: 18px;
+}
+.card .row.between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card h1 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+    color: var(--brand-2);
+}
+.card .muted {
+    color: #6b7280;
+    font-size: 1.05rem;
+}
+.card .stars {
+    color: #fbbf24;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* --- Layout principal --- */
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+.layout section > h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #222;
+}
+
+/* --- Cards de empleos y valoraciones --- */
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+.job-list .card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.job-list .card .title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--brand-2);
+}
+.job-list .card .muted {
+    color: #6b7280;
+    font-size: 1rem;
+}
+.job-list .card .btn {
+    background: #fff;
+    color: var(--brand-2);
+    border: 1px solid var(--brand-2);
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+.job-list .card .btn:hover {
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+/* --- Aside de empresa --- */
+aside.card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+    padding: 22px 24px;
+    margin-bottom: 18px;
+}
+aside.card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--brand-2);
+}
+aside.card p {
+    color: #222;
+    font-size: 1.05rem;
+    margin-bottom: 16px;
+}
+aside.card ul.muted {
+    color: #6b7280;
+    font-size: 1rem;
+    margin: 0;
+    padding-left: 18px;
+}
+aside.card ul.muted li {
+    margin-bottom: 6px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .card {
+        padding: 18px 8px;
+    }
+    aside.card {
+        padding: 18px 8px;
+    }
+}

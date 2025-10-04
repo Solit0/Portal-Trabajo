@@ -1,0 +1,141 @@
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: #222;
+}
+
+/* Lista de empresas apiladas */
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Card de empresa */
+.job-list .card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding: 28px 32px;
+}
+
+.company-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: #e0e7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--brand-2);
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+
+.company-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.company-info strong {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--brand-2);
+}
+
+.company-details {
+    color: #374151;
+    font-size: 1rem;
+}
+
+.company-tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.company-tags .chip {
+    background: #e0e7ff;
+    color: var(--brand-2);
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: 0.95rem;
+    border: none;
+}
+
+.company-info .muted {
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+.company-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.company-actions .stats {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 1.05rem;
+    background: #e0e7ff;
+    border-radius: 999px;
+    padding: 4px 14px;
+    text-align: right;
+}
+
+.company-actions .btn {
+    background: #fff;
+    color: var(--brand-2);
+    border: 1px solid var(--brand-2);
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    min-width: 120px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.company-actions .btn:hover {
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .job-list .card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        padding: 18px 10px;
+    }
+    .company-logo {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+    .company-actions {
+        align-items: flex-start;
+    }
+}

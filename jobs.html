@@ -1,1 +1,145 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Resultados de búsqueda – Portal de Trabajo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/tokens.css"/><link rel="stylesheet" href="css/base.css"/><link rel="stylesheet" href="css/components.css"/></head><body><div data-include="partials/header.html"></div><main class="container"><div class="toolbar"><div class="left" style="flex:1"><form class="search" action="jobs.html" method="get" style="flex:1"><input type="text" name="q" placeholder="Cargo o palabra clave"/><input type="text" name="location" placeholder="Ubicación"/><button class="btn">Buscar</button></form></div><div class="right"><div class="select"><select name="sort"><option value="recent">Más recientes</option><option value="relevant">Relevantes</option></select><span class="ico"><img src="assets/icons/chevron-down.svg" alt=""></span></div></div></div><section class="layout"><div data-include="partials/filter-sidebar.html"></div><section><div class="muted" data-slot="result-count">1,240 empleos encontrados</div><ul class="job-list" data-slot="results"><div data-include="partials/job-card.html"></div><div data-include="partials/job-card.html"></div><div data-include="partials/job-card.html"></div></ul><div data-include="partials/pagination.html"></div></section></section></main><div data-include="partials/footer.html"></div><script src="js/components/include.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Resultados de búsqueda – Portal de Trabajo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/components.css"/>
+    <link rel="stylesheet" href="css/pages/jobs.css"/>
+</head>
+<body>
+    <div data-include="partials/header.html"></div>
+    <main class="container">
+        <section class="jobs-search-bar">
+            <h1 style="font-size:2rem; font-weight:800; margin-bottom:18px;">Busca empleos</h1>
+            <form action="jobs.html" method="get">
+                <input type="text" name="q" placeholder="Cargo o palabra clave"/>
+                <input type="text" name="location" placeholder="Ubicación"/>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+        <section class="jobs-layout">
+            <aside class="filters-aside">
+                <h3>Filtrar empleos</h3>
+                <div class="filters-group">
+                    <label for="type">Tipo de empleo</label>
+                    <select id="type" name="type">
+                        <option value="">Todos</option>
+                        <option value="full-time">Tiempo completo</option>
+                        <option value="part-time">Medio tiempo</option>
+                        <option value="internship">Pasantía</option>
+                    </select>
+                </div>
+                <div class="filters-group">
+                    <label for="sector">Sector</label>
+                    <select id="sector" name="sector">
+                        <option value="">Todos</option>
+                        <option value="tech">Tecnología</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="finance">Finanzas</option>
+                        <option value="design">Diseño</option>
+                    </select>
+                </div>
+                <div class="filters-group">
+                    <label>Ubicación</label>
+                    <input type="text" name="filter-location" placeholder="Ciudad o país"/>
+                </div>
+                <div class="filters-group">
+                    <label for="modality">Modalidad</label>
+                    <select id="modality" name="modality">
+                        <option value="">Todas</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="remoto">Remoto</option>
+                        <option value="hibrido">Híbrido</option>
+                    </select>
+                </div>
+                <div class="filters-actions" style="display:flex; gap:12px; margin-top:18px;">
+                    <button type="submit" class="btn" style="flex:1;">Agregar filtros</button>
+                    <button type="reset" class="btn ghost" style="flex:1;">Limpiar</button>
+                </div>
+            </aside>
+            <section>
+                <div class="result-count">1,240 empleos encontrados</div>
+                <ul class="jobs-list">
+                    <li class="card job-card">
+                        <div class="row between">
+                            <div>
+                                <div class="title">
+                                    <a href="job.html">Desarrollador Node.js</a>
+                                </div>
+                                <div class="meta">
+                                    ACME Labs · Remoto · full-time · Publicado: 26/09/2025
+                                </div>
+                                <div class="muted">
+                                    Construye APIs robustas con Express y Sequelize...
+                                </div>
+                                <div class="tags">
+                                    <span class="chip">Node.js</span>
+                                    <span class="chip">Express</span>
+                                    <span class="chip">SQL</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn small">Ver detalles</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card job-card">
+                        <div class="row between">
+                            <div>
+                                <div class="title">
+                                    <a href="job.html">QA Tester</a>
+                                </div>
+                                <div class="meta">
+                                    BetaCorp · Presencial · part-time · Publicado: 25/09/2025
+                                </div>
+                                <div class="muted">
+                                    Pruebas manuales y automatizadas para aplicaciones web...
+                                </div>
+                                <div class="tags">
+                                    <span class="chip">QA</span>
+                                    <span class="chip">Testing</span>
+                                    <span class="chip">Automatización</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn small">Ver detalles</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card job-card">
+                        <div class="row between">
+                            <div>
+                                <div class="title">
+                                    <a href="job.html">Diseñador UI/UX</a>
+                                </div>
+                                <div class="meta">
+                                    Cloudify · Remoto · full-time · Publicado: 24/09/2025
+                                </div>
+                                <div class="muted">
+                                    Diseña interfaces atractivas y funcionales para productos digitales...
+                                </div>
+                                <div class="tags">
+                                    <span class="chip">UI</span>
+                                    <span class="chip">UX</span>
+                                    <span class="chip">Figma</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn small">Ver detalles</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div data-include="partials/pagination.html"></div>
+            </section>
+        </section>
+    </main>
+    <div data-include="partials/footer.html"></div>
+    <script src="js/components/include.js"></script>
+</body>
+</html>

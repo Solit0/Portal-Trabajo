@@ -1,1 +1,144 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>ACME Labs – Portal de Trabajo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/tokens.css"/><link rel="stylesheet" href="css/base.css"/><link rel="stylesheet" href="css/components.css"/></head><body><div data-include="partials/header.html"></div><main class="container"><section class="card"><div class="row between"><div><h1>ACME Labs</h1><div class="muted">Tecnología · San Salvador · acme.com</div></div><div class="stars">★★★★★</div></div></section><section class="layout" style="margin-top:16px"><section><h2>Empleos</h2><ul class="job-list"><div data-include="partials/job-card.html"></div><div data-include="partials/job-card.html"></div></ul><h2 id="reviews" style="margin-top:16px">Valoraciones</h2><div data-include="partials/reviews-summary.html"></div><ul class="job-list"><div data-include="partials/review-item.html"></div><div data-include="partials/review-item.html"></div></ul></section><aside class="card"><h3>Acerca de</h3><p>Innovación y talento desde 2015. Productos de software en la nube.</p><h3>Datos</h3><ul class="muted"><li>Tamaño: 200-500</li><li>Fundación: 2015</li><li>Industria: Tecnología</li></ul></aside></section></main><div data-include="partials/footer.html"></div><script src="js/components/include.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Tech Innovations – Portal de Trabajo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/components.css"/>
+    <link rel="stylesheet" href="css/pages/company.css"/>
+</head>
+<body>
+    <div data-include="partials/header.html"></div>
+    <main class="container">
+        <div class="dashboard-layout">
+            <!-- Sidebar Panel -->
+            <aside class="sidebar-panel">
+                <div class="panel-menu">
+                    <ul>
+                        <li class="active">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/></svg>
+                            Panel
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 17v-6a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v6"/><path d="M12 7v10"/></svg>
+                            Mis ofertas
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M5.5 21h13a2.5 2.5 0 0 0 2.5-2.5v-1a6.5 6.5 0 0 0-13 0v1A2.5 2.5 0 0 0 5.5 21z"/></svg>
+                            Postulaciones
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-metric">
+                    12
+                    <div class="label">Ofertas activas</div>
+                </div>
+                <div class="panel-metric">
+                    84
+                    <div class="label">Postulaciones</div>
+                </div>
+                <div class="company-selector">
+                    <label for="company-select">Empresa:</label>
+                    <select id="company-select">
+                        <option>Tech Innovations</option>
+                        <option>ACME Labs</option>
+                        <option>BetaCorp</option>
+                        <option>Cloudify</option>
+                    </select>
+                </div>
+            </aside>
+            <!-- Main Dashboard -->
+            <section class="dashboard-main">
+                <div class="dashboard-header">
+                    <h1>Hola, Tech Innovations</h1>
+                    <button class="btn">
+                        + Nuevo tema
+                    </button>
+                </div>
+                <div class="offers-list">
+                    <div class="offer-card">
+                        <div class="offer-info">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="#2563eb" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/></svg>
+                            </span>
+                            <div>
+                                <div class="title">Desarrollador Web Full Stack</div>
+                                <div class="subtitle">Tech Innovations</div>
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <span class="postulations">24 postulaciones</span>
+                            <button class="btn">Ver</button>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-info">
+                            <span class="icon" style="background:#fef3c7;color:#f59e0b;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="#f59e0b" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/></svg>
+                            </span>
+                            <div>
+                                <div class="title">Analista de Datos</div>
+                                <div class="subtitle">Tech Innovations</div>
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <span class="postulations">18 postulaciones</span>
+                            <button class="btn">Ver</button>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-info">
+                            <span class="icon" style="background:#e0e7ff;color:#2563eb;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="#2563eb" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 3v4"/><path d="M8 3v4"/></svg>
+                            </span>
+                            <div>
+                                <div class="title">Diseñador UI/UX</div>
+                                <div class="subtitle">Tech Innovations</div>
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <span class="postulations">15 postulaciones</span>
+                            <button class="btn">Ver</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-postulations-card">
+                    <h3>Postulaciones Recientes</h3>
+                    <div class="recent-postulations-list">
+                        <div class="recent-postulation">
+                            <span class="avatar">JG</span>
+                            <div class="info">
+                                <span class="name">José García</span>
+                                <span class="details">Postuló a Desarrollador Web Full Stack &bull; Hace 2 horas</span>
+                            </div>
+                            <button class="btn">Ver perfil</button>
+                        </div>
+                        <div class="recent-postulation">
+                            <span class="avatar">MR</span>
+                            <div class="info">
+                                <span class="name">María Rodríguez</span>
+                                <span class="details">Postuló a Analista de Datos &bull; Hace 1 día</span>
+                            </div>
+                            <button class="btn">Ver perfil</button>
+                        </div>
+                        <div class="recent-postulation">
+                            <span class="avatar">CM</span>
+                            <div class="info">
+                                <span class="name">Carlos Méndez</span>
+                                <span class="details">Postuló a Desarrollador Web Full Stack &bull; Hace 2 horas</span>
+                            </div>
+                            <button class="btn">Ver perfil</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div data-include="partials/footer.html"></div>
+    <script src="js/components/include.js"></script>
+</body>
+</html>

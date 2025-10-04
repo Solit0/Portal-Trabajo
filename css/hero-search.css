@@ -1,0 +1,162 @@
+/* --- Variables de Color (Opcional, pero recomendado) --- */
+:root {
+    --primary-blue: #2522e0;
+    --primary-purple: #7d1af5;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --border-color: #e5e7eb;
+}
+
+/* --- Contenedor Principal del Hero --- */
+.hero-search {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    padding: 6rem 2rem; /* Espaciado generoso arriba/abajo */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crea las dos columnas */
+    align-items: center;
+    gap: 3rem; /* Espacio entre columnas */
+}
+
+/* --- Columna Izquierda: Contenido y Formulario --- */
+.hero-content h1 {
+    font-size: 3.5rem; /* Tamaño grande para el título */
+    font-weight: 700;
+    margin: 0 0 1rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 450px;
+    opacity: 0.9;
+    margin-bottom: 2.5rem;
+}
+
+/* --- Formulario de Búsqueda --- */
+.search-form {
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+    padding: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Permite que los inputs crezcan */
+    padding: 0 0.5rem;
+}
+
+.input-wrapper svg {
+    margin-right: 0.5rem;
+}
+
+.search-form input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.8rem 0.2rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: var(--text-dark);
+}
+
+.search-form .location-wrapper {
+    border-left: 1px solid var(--border-color); /* Separador vertical */
+    padding-left: 1rem;
+}
+
+.search-form button[type="submit"] {
+    background-color: var(--primary-purple);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-form button[type="submit"]:hover {
+    background-color: #6a0ad1; /* Un poco más oscuro en hover */
+}
+
+/* --- Chips de Búsquedas Populares --- */
+.popular-searches {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.chip {
+    background-color: rgba(255, 255, 255, 0.15); /* Fondo semitransparente */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.chip:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- Columna Derecha: Showcase --- */
+.hero-showcase {
+    background-color: var(--primary-purple);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px; /* Altura fija */
+    width: 100%;
+}
+
+.hero-showcase h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* --- Responsividad para pantallas pequeñas --- */
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr; /* Apila las columnas */
+        gap: 4rem;
+    }
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+    .hero-showcase {
+        height: 250px;
+    }
+}
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: stretch;
+        background: none;
+        box-shadow: none;
+    }
+    .input-wrapper {
+        background-color: white;
+        border-radius: 12px;
+        padding: 0 1rem;
+    }
+    .search-form .location-wrapper {
+        border: none;
+        padding-left: 1rem;
+    }
+}

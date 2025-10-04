@@ -1,1 +1,42 @@
-<section class="hero container"><h1>Encuentra el trabajo de tus sueños</h1><p class="muted">Miles de oportunidades en tecnología, marketing, finanzas y más.</p><form class="search" action="jobs.html" method="get"><label><span class="muted">Cargo o palabra clave</span><input type="text" name="q" placeholder="Ej. Desarrollador Web"/></label><label><span class="muted">Ubicación</span><input type="text" name="location" placeholder="Ej. San Salvador"/></label><button class="btn">Buscar</button></form><div style="margin-top:12px"><span class="chip">Desarrollador Web</span><span class="chip">Analista de datos</span><span class="chip">Diseñador UX</span></div></section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra el trabajo de tus sueños</title>
+    <link rel="stylesheet" href="/css/hero-search.css">
+</head>
+<body>
+    <section class="hero-search">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Encuentra el trabajo de tus sueños</h1>
+                <p>Más de 10,000 empresas confían en nosotros para encontrar los mejores talentos</p>
+                <form class="search-form">
+                    <div class="input-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke="#6B7280" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input type="text" placeholder="¿Qué estás buscando?">
+                    </div>
+                    <div class="input-wrapper location-wrapper">
+                        <input type="text" placeholder="Ubicacion">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6L8 10L12 6" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <button type="submit">Buscar</button>
+                </form>
+                <div class="popular-searches">
+                    <a href="#" class="chip">Desarrollador Web</a>
+                    <a href="#" class="chip">Analista de datos</a>
+                    <a href="#" class="chip">Ing de software</a>
+                </div>
+            </div>
+            <div class="hero-showcase">
+                <h2>Trabajo Ideal</h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

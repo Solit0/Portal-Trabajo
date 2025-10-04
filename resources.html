@@ -1,1 +1,84 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Recursos – Portal de Trabajo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/tokens.css"/><link rel="stylesheet" href="css/base.css"/><link rel="stylesheet" href="css/components.css"/></head><body><div data-include="partials/header.html"></div><main><section class="hero container"><h1>Recursos</h1><p class="muted">Prepárate para entrevistas, CV y habilidades clave.</p><form class="search" action="resources.html" method="get"><input type="text" name="q" placeholder="Buscar artículos o temas"/><input type="text" name="tag" placeholder="Etiqueta (ej. entrevistas)"/><button class="btn">Buscar</button></form></section><section class="container layout"><aside class="card"><h3>Cursos recomendados</h3><ul class="job-list"><li class="card"><strong>Algoritmos para entrevistas</strong><div class="muted">Coursera · ★★★★☆</div></li><li class="card"><strong>UX Writing</strong><div class="muted">Udemy · ★★★★☆</div></li></ul><h3 style="margin-top:16px">Temas populares</h3><div><span class="chip">Entrevistas</span><span class="chip">CV</span><span class="chip">LinkedIn</span></div></aside><section><h2>Artículos recientes</h2><ul class="job-list"><li class="card"><span class="chip">Guía</span><h3>Cómo preparar tu CV para tecnología</h3><p class="muted">Consejos prácticos para destacar…</p><a href="#">Leer artículo →</a></li><li class="card"><span class="chip">Entrevista</span><h3>100 preguntas frecuentes</h3><p class="muted">Repasa las respuestas más comunes…</p><a href="#">Leer artículo →</a></li></ul></section></section></main><div data-include="partials/footer.html"></div><script src="js/components/include.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Recursos – Portal de Trabajo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/tokens.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/components.css"/>
+    <link rel="stylesheet" href="css/pages/resources.css"/>
+</head>
+<body>
+    <div data-include="partials/header.html"></div>
+    <main>
+        <section class="hero container">
+            <h1>Recursos profesionales</h1>
+            <p>Descubre recursos para mejorar tus habilidades y avanzar en tu carrera profesional</p>
+            <form class="search">
+                <input type="text" placeholder="Buscar recursos..."/>
+                <button>Buscar</button>
+            </form>
+        </section>
+        <section class="container layout">
+            <section>
+                <h2>Artículos Recientes</h2>
+                <ul class="job-list">
+                    <li class="card">
+                        <span class="chip">Guías</span>
+                        <h3>Cómo crear un currículum que destaque en 2023</h3>
+                        <p class="muted">Descubre los elementos claves que debe tener un currículum moderno y cómo estructurarlo para llamar la atención de los reclutadores</p>
+                        <a href="#">Leer artículo &rarr;</a>
+                    </li>
+                    <li class="card">
+                        <span class="chip">Entrevistas</span>
+                        <h3>Las 10 preguntas más comunes en entrevistas</h3>
+                        <p class="muted">Prepárate para tu próxima entrevista con respuestas efectivas a las preguntas más frecuentes que te harán los reclutadores</p>
+                        <a href="#">Leer artículo &rarr;</a>
+                    </li>
+                    <li class="card">
+                        <span class="chip">Carrera</span>
+                        <h3>Como planificar tu carrera profesional a largo plazo</h3>
+                        <p class="muted">Aprende a establecer metas profesionales realistas y a trazar un camino claro para alcanzar el éxito en tu carrera</p>
+                        <a href="#">Leer artículo &rarr;</a>
+                    </li>
+                </ul>
+            </section>
+            <aside style="display: flex; flex-direction: column; gap: 24px;">
+                <div class="card">
+                    <h3>Cursos recomendados</h3>
+                    <ul class="job-list">
+                        <li class="card">
+                            <strong>Desarrollo web completo</strong>
+                            <div class="muted">★★★★★</div>
+                            <span class="price">$49.99</span>
+                        </li>
+                        <li class="card">
+                            <strong>Análisis de datos con python</strong>
+                            <div class="muted">★★★★☆</div>
+                            <span class="price">$59.99</span>
+                        </li>
+                        <li class="card">
+                            <strong>Diseño UI/UX profesional</strong>
+                            <div class="muted">★★★★★</div>
+                            <span class="price">$69.99</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Temas populares</h3>
+                    <div class="topic-list">
+                        <div class="topic"><span class="chip">¿Cómo crear un currículum?</span></div>
+                        <div class="topic"><span class="chip">Entrevistas de trabajo</span></div>
+                        <div class="topic"><span class="chip">Desarrollo profesional</span></div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <div data-include="partials/footer.html"></div>
+    <script src="js/components/include.js"></script>
+</body>
+</html>

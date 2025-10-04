@@ -1,1 +1,199 @@
-/* resources page styles (extend as needed) */
+.hero.container {
+    background: var(--brand-2);
+    color: #fff;
+    border-radius: 18px;
+    padding: 40px 32px 32px 32px;
+    margin-bottom: 32px;
+    max-width: 100%;
+}
+.hero.container h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.hero.container p {
+    font-size: 1.15rem;
+    margin-bottom: 24px;
+    color: #e0e7ff;
+}
+.hero.container .search {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 0;
+    max-width: 600px;
+}
+.hero.container .search input {
+    background: #fff;
+    color: #222;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px rgba(67,56,202,0.08);
+}
+.hero.container .search button {
+    background: #fff;
+    color: var(--brand-2);
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(67,56,202,0.08);
+    transition: background 0.2s, color 0.2s;
+}
+.hero.container .search button:hover {
+    background: #e0e7ff;
+    color: #4338ca;
+}
+
+/* Layout principal */
+.container.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+/* Artículos recientes */
+.container.layout section > h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+.job-list .card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.job-list .chip {
+    background: #e0e7ff;
+    color: var(--brand-2);
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.job-list h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+}
+.job-list p.muted {
+    color: var(--muted);
+    font-size: 1rem;
+    margin: 0 0 8px 0;
+}
+.job-list a {
+    color: var(--brand-2);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 4px;
+}
+.job-list a:hover {
+    text-decoration: underline;
+}
+
+
+aside.card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+    margin-bottom: 18px;
+}
+aside.card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+aside.card ul.job-list {
+    gap: 12px;
+}
+aside.card ul.job-list li.card {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 12px 0;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+}
+aside.card ul.job-list li.card strong {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+aside.card ul.job-list li.card .muted {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+aside.card ul.job-list li.card .price {
+    color: var(--brand-2);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: auto;
+}
+aside.card .chip {
+    background: #e0e7ff;
+    color: var(--brand-2);
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+aside.card .topic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espacio entre cada tema popular */
+    margin-top: 8px;
+}
+aside.card .topic-list .topic {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: var(--brand-2);
+    font-weight: 600;
+    background: #f3f4f6;
+    border-radius: 8px;
+    padding: 8px 12px;
+    /* No ocultar el header, solo espacio entre temas */
+}
+aside.card .topic-list .topic:hover {
+    background: #e0e7ff;
+    cursor: pointer;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container.layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    aside.card {
+        margin-bottom: 24px;
+    }
+}

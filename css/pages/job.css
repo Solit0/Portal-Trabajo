@@ -1,1 +1,222 @@
-/* job page styles (extend as needed) */
+.job-header {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 32px 32px 24px 32px;
+    box-shadow: 0 2px 12px rgba(67,56,202,0.10);
+    margin-bottom: 24px;
+}
+.job-header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: var(--brand-2);
+}
+.job-header .muted {
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+.job-header .chip {
+    background: #e0e7ff;
+    color: var(--brand-2);
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: 0.95rem;
+    border: none;
+    margin-right: 8px;
+}
+
+/* Layout principal */
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+/* Card principal de descripción */
+article.card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 32px 32px 24px 32px;
+    box-shadow: 0 2px 12px rgba(67,56,202,0.10);
+    margin-bottom: 18px;
+}
+article.card h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--brand-2);
+}
+article.card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #222;
+}
+article.card ul {
+    margin: 0 0 12px 18px;
+    padding: 0;
+    color: #374151;
+    font-size: 1.05rem;
+}
+article.card ul.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: 0;
+}
+article.card ul.row .chip {
+    background: #e0e7ff;
+    color: var(--brand-2);
+    font-weight: 600;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-size: 0.95rem;
+    border: none;
+}
+
+/* Formulario de aplicación */
+form.card.form {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 32px 32px 24px 32px;
+    box-shadow: 0 2px 12px rgba(67,56,202,0.10);
+}
+form.card.form h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: var(--brand-2);
+}
+form.card.form label {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 8px;
+}
+form.card.form input,
+form.card.form textarea {
+    background: #f3f4f6;
+    color: #222;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+form.card.form input[type="file"] {
+    padding: 6px 0;
+    background: none;
+}
+form.card.form .btn {
+    background: linear-gradient(90deg,var(--brand),var(--brand-2));
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background 0.2s;
+    margin-top: 12px;
+}
+form.card.form .btn:hover {
+    background: var(--brand-2);
+}
+
+/* Aside: empresa, reviews, etc */
+aside.stack > div,
+aside.stack ul.job-list > div {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+    margin-bottom: 8px;
+}
+
+/* Checkbox alineado con el texto */
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 2px; /* Menor separación entre checkbox y texto */
+    margin-bottom: 5px;
+}
+.form-check input[type="checkbox"] {
+    accent-color: var(--brand-2);
+    margin: 0;
+}
+.form-check label {
+    margin: 0;
+    font-size: 1rem;
+    color: #222;
+    font-weight: 500;
+}
+
+/* Contenedores separados para descripción, responsabilidades y beneficios */
+.section-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 28px;
+    box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+    margin-bottom: 18px;
+}
+.section-card h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--brand-2);
+    margin-bottom: 10px;
+}
+.section-card ul {
+    margin: 0 0 0 18px;
+    padding: 0;
+    color: #374151;
+    font-size: 1.05rem;
+}
+
+/* Comentarios en cards */
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+.comments-list .comment-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 22px;
+    box-shadow: 0 2px 8px rgba(67,56,202,0.06);
+    margin: 0;
+    font-size: 1rem;
+    color: #222;
+}
+.comments-list .comment-card .author {
+    font-weight: 700;
+    color: var(--brand-2);
+    margin-bottom: 6px;
+}
+.comments-list .comment-card .date {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .job-header,
+    article.card,
+    form.card.form {
+        padding: 20px 12px;
+    }
+}

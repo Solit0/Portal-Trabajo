@@ -1,1 +1,16 @@
-<aside class="card"><h3>Filtrar</h3><form class="form" action="jobs.html" method="get"><div><strong>Tipo</strong><label><input type="checkbox" name="type[]" value="full-time"/> Full-time</label><label><input type="checkbox" name="type[]" value="part-time"/> Part-time</label><label><input type="checkbox" name="type[]" value="remote"/> Remote</label><label><input type="checkbox" name="type[]" value="contract"/> Contract</label><label><input type="checkbox" name="type[]" value="internship"/> Internship</label></div><div><strong>Experiencia</strong><label><input type="checkbox" name="exp[]" value="Junior"/> Junior</label><label><input type="checkbox" name="exp[]" value="Mid"/> Mid</label><label><input type="checkbox" name="exp[]" value="Senior"/> Senior</label></div><div><strong>Sector</strong><input type="text" name="sector" placeholder="Ej. Tecnología"/></div><div class="form grid-2"><label>Salario mín.<input type="number" name="salaryMin"/></label><label>Salario máx.<input type="number" name="salaryMax"/></label></div><button class="btn">Aplicar filtros</button></form></aside>
+<aside class="filter-sidebar">
+    <h4>Filtrar por</h4>
+    <form>
+        <label for="location">Ubicación</label>
+        <input type="text" id="location" name="location">
+
+        <label for="type">Tipo de empleo</label>
+        <select id="type" name="type">
+            <option value="">Todos</option>
+            <option value="full-time">Tiempo completo</option>
+            <option value="part-time">Medio tiempo</option>
+        </select>
+
+        <button type="submit">Aplicar filtros</button>
+    </form>
+</aside>

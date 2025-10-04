@@ -1,1 +1,17 @@
-<section class="container metrics"><div class="card metric"><div class="num" data-metric="jobs">235</div><div class="muted">Empleos activos</div></div><div class="card metric"><div class="num" data-metric="companies">58</div><div class="muted">Empresas</div></div><div class="card metric"><div class="num" data-metric="users">1,240</div><div class="muted">Usuarios</div></div><div class="card metric"><div class="num" data-metric="apps">3,564</div><div class="muted">Postulaciones</div></div></section>
+<section class="container metrics">
+    <link rel="stylesheet" href="css/metrics-row.css">
+    <div class="metrics-row">
+        <div class="metric">
+            <span class="metric-value">{{metrics.jobs}}</span>
+            <span class="metric-label">Empleos publicados</span>
+        </div>
+        <div class="metric">
+            <span class="metric-value">{{metrics.companies}}</span>
+            <span class="metric-label">Empresas registradas</span>
+        </div>
+        <div class="metric">
+            <span class="metric-value">{{metrics.reviews}}</span>
+            <span class="metric-label">Reseñas</span>
+        </div>
+    </div>
+</section>

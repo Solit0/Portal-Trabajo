@@ -1,1 +1,74 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Empresas – Portal de Trabajo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/tokens.css"/><link rel="stylesheet" href="css/base.css"/><link rel="stylesheet" href="css/components.css"/></head><body><div data-include="partials/header.html"></div><main class="container"><h1>Empresas</h1><ul class="job-list" style="grid-template-columns:repeat(3,1fr)"><li class="card"><strong>ACME Labs</strong><div class="muted">San Salvador</div><a class="btn small" href="company.html" style="margin-top:8px">Ver perfil</a></li><li class="card"><strong>BetaCorp</strong><div class="muted">Santa Ana</div><a class="btn small" href="company.html" style="margin-top:8px">Ver perfil</a></li><li class="card"><strong>Cloudify</strong><div class="muted">San Miguel</div><a class="btn small" href="company.html" style="margin-top:8px">Ver perfil</a></li></ul></main><div data-include="partials/footer.html"></div><script src="js/components/include.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Empresas – Portal de Trabajo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/components.css"/>
+    <link rel="stylesheet" href="css/pages/companies.css"/>
+</head>
+<body>
+    <div data-include="partials/header.html"></div>
+    <main class="container">
+        <h1>Empresas</h1>
+        <ul class="job-list">
+            <li class="card">
+                <div class="company-logo">A</div>
+                <div class="company-info">
+                    <strong>ACME Labs</strong>
+                    <div class="company-details">San Salvador · Tecnología · Fundada en 2012</div>
+                    <div class="company-tags">
+                        <span class="chip">Innovación</span>
+                        <span class="chip">IA</span>
+                        <span class="chip">Remoto</span>
+                    </div>
+                    <div class="muted">ACME Labs es líder en soluciones tecnológicas para empresas de todo tamaño.</div>
+                </div>
+                <div class="company-actions">
+                    <div class="stats">45 ofertas</div>
+                    <a class="btn small" href="company.html">Ver perfil</a>
+                </div>
+            </li>
+            <li class="card">
+                <div class="company-logo">B</div>
+                <div class="company-info">
+                    <strong>BetaCorp</strong>
+                    <div class="company-details">Santa Ana · Marketing · Fundada en 2015</div>
+                    <div class="company-tags">
+                        <span class="chip">Creatividad</span>
+                        <span class="chip">Digital</span>
+                    </div>
+                    <div class="muted">BetaCorp ayuda a marcas a crecer con estrategias digitales y campañas innovadoras.</div>
+                </div>
+                <div class="company-actions">
+                    <div class="stats">32 ofertas</div>
+                    <a class="btn small" href="company.html">Ver perfil</a>
+                </div>
+            </li>
+            <li class="card">
+                <div class="company-logo">C</div>
+                <div class="company-info">
+                    <strong>Cloudify</strong>
+                    <div class="company-details">San Miguel · Software · Fundada en 2018</div>
+                    <div class="company-tags">
+                        <span class="chip">Cloud</span>
+                        <span class="chip">SaaS</span>
+                        <span class="chip">Flexible</span>
+                    </div>
+                    <div class="muted">Cloudify desarrolla soluciones SaaS para empresas modernas y equipos remotos.</div>
+                </div>
+                <div class="company-actions">
+                    <div class="stats">21 ofertas</div>
+                    <a class="btn small" href="company.html">Ver perfil</a>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <div data-include="partials/footer.html"></div>
+    <script src="js/components/include.js"></script>
+</body>
+</html>

@@ -1,1 +1,37 @@
-.auth-wrap{display:grid;place-items:center;min-height:65vh}.auth-card{max-width:440px;width:94%}.auth-card h1{margin-bottom:8px}.segment{display:flex;background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}.segment button{flex:1;padding:10px;font-weight:700;background:transparent;border:none;color:var(--muted);cursor:pointer}.segment button.active{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#fff}
+.auth-wrap {
+    display: grid;
+    place-items: center;
+    min-height: 65vh;
+}
+
+.auth-card {
+    max-width: 440px;
+    width: 94%;
+}
+
+.auth-card h1 {
+    margin-bottom: 8px;
+}
+
+.segment {
+    display: flex;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.segment button {
+    flex: 1;
+    padding: 10px;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.segment button.active {
+    background: linear-gradient(90deg, var(--brand), var(--brand-2));
+    color: #fff;
+}
